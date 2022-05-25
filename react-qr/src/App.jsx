@@ -10,12 +10,9 @@ function App() {
 		QRCode.toDataURL(url, {
 			width: 800,
 			margin: 2,
-			color: {
-				dark: '#335383ff'
-			}
 		}, (err, url) => {
 			if (err) return console.error(err)
-			
+
 			setQrcode(url)
 		})
 	}
